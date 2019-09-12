@@ -1,0 +1,25 @@
+{
+  "name": "intro-react-training",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://ConstantineStehoff@github.com/ConstantineStehoff/intro-react-training.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ConstantineStehoff/intro-react-training/issues"
+  },
+  "homepage": "https://github.com/ConstantineStehoff/intro-react-training#readme",
+  "devDependencies": {
+    "prettier": "^1.18.2"
+  }
+}
