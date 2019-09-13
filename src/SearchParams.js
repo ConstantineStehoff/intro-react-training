@@ -52,7 +52,7 @@ const SearchParams = () => {
         </label>
         <AnimalDropdown />
         <BreedDropdown />
-        <lable htmlFor="theme">
+        <label htmlFor="theme">
           Theme
           <select
             value={theme}
@@ -64,7 +64,7 @@ const SearchParams = () => {
             <option value="mediumOrchid">Medium Orchid</option>
             <option value="chartreuse">Chartreuse</option>
           </select>
-        </lable>
+        </label>
         <button style={{ backgroundColor: theme }}>Submit</button>
       </form>
       <Results pets={pets} />
