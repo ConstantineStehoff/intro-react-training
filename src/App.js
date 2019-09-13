@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, lazy, Suspense } from "react";
 import { render } from "react-dom";
-import SearchParams from "./SearchParams";
 import { Router, Link } from "@reach/router";
-import DetailsWithErrorBoundary from "./Details";
 import ThemeContext from "./ThemeContext";
+
+const DetailsWithErrorBoundary = lazy(() => import("./Details"));
+const SearchParams = lazy(() => import("./SearchParams"));
 
 const App = () => {
   const themeHook = useState("peru");
@@ -14,11 +15,12 @@ const App = () => {
         <header>
           <Link to="/">Adopt Me</Link>
         </header>
-
-        <Router>
-          <SearchParams path="/" />
-          <DetailsWithErrorBoundary path="/details/:id" />
-        </Router>
+        <Suspense fallback={<h1>Loading Route...</h1>}>
+          <Router>
+            <SearchParams path="/" />
+            <DetailsWithErrorBoundary path="/details/:id" />
+          </Router>
+        </Suspense>
       </div>
     </ThemeContext.Provider>
   );
