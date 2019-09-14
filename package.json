@@ -7,7 +7,7 @@
     "dev": "parcel src/index.html",
     "format": "prettier \"src/**/*.{js,html}\" --write",
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "dev:mock": "cross-env PET_MOCK=mock npm run dev"
   },
   "repository": {
@@ -22,14 +22,17 @@
   },
   "homepage": "https://github.com/ConstantineStehoff/intro-react-training#readme",
   "devDependencies": {
+    "@testing-library/react": "^9.1.4",
     "babel-eslint": "^10.0.3",
     "cross-env": "^5.2.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^2.0.1",
+    "jest": "^24.9.0",
     "parcel-bundler": "^1.12.3",
-    "prettier": "^1.18.2"
+    "prettier": "^1.18.2",
+    "react-testing-library": "^8.0.1"
   },
   "dependencies": {
     "@frontendmasters/pet": "^1.0.3",
