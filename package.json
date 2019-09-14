@@ -8,7 +8,8 @@
     "format": "prettier \"src/**/*.{js,html}\" --write",
     "lint": "tslint --project",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev:mock": "cross-env PET_MOCK=mock npm run dev"
+    "dev:mock": "cross-env PET_MOCK=mock npm run dev",
+    "typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",

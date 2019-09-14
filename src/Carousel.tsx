@@ -1,6 +1,4 @@
 import React from "react";
-import { runInThisContext } from "vm";
-import { Interface } from "readline";
 import { Photo } from "@frontendmasters/pet";
 
 interface IProps {
